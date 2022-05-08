@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier": "prettier -c .",
+    "prettier-fix": "prettier -w ."
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
