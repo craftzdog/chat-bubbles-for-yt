@@ -1,7 +1,6 @@
 ![cover](./cover.jpg)
 
-Chat bubble tool for YouTube
-============================
+# Chat bubble tool for YouTube
 
 A tool for recording typing animations and sounds with imitated chat UI.
 

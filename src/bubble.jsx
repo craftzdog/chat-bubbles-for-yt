@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './bubble.css'
 
-const Bubble = ({ id, children, sender }) => {
+const Bubble = ({ id, children }) => {
   return (
     <motion.div
       key={id}

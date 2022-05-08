@@ -3,6 +3,7 @@
   padding: 12px 20px;
   display: inline-block;
   max-width: 600px;
+  overflow-wrap: break-word;
 }
 
 .bubble:not(:first-of-type) {
@@ -10,7 +11,6 @@
 }
 
 .bubble {
-  margin-right: 25%;
   background-color: #eeeeee;
   position: relative;
 }

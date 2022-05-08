@@ -11,6 +11,7 @@ const BubbleInput = ({ onChange, onSubmit, value }) => {
     },
     [onChange]
   )
+
   const handleKeyDown = useCallback(
     e => {
       if (e.keyCode === 13) {
@@ -18,14 +19,13 @@ const BubbleInput = ({ onChange, onSubmit, value }) => {
         e.preventDefault()
         setSubmitted(true)
         setTimeout(() => {
-          window.document.querySelector('.bubble.input > div').focus()
           setSubmitted(false)
         }, 10)
       }
     },
     [onSubmit]
   )
-  console.log('value:', value)
+
   return (
     <div
       className={`bubble input ${value.length === 0 ? 'empty' : ''} ${

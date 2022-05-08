@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback } from 'react'
 import './App.css'
 import Chat from './chat'
 import Bubble from './bubble'
@@ -17,19 +17,12 @@ function App() {
     }
   }, [newMessage, messages])
 
-  useEffect(() => {
-    const el = document.querySelector('.bubble.input > div')
-    if (el) {
-      el.focus()
-    }
-  }, [])
-
   return (
     <div className="App">
       <Chat>
         <AnimatePresence>
           {messages.map((m, index) => (
-            <Bubble key={index} id={m}>
+            <Bubble key={`${index}-${m}`} id={m}>
               {m}
             </Bubble>
           ))}
