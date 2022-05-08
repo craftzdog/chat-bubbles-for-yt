@@ -1,7 +1,7 @@
 .App {
   background-color: #00a000;
-  width: 1920px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column-reverse;
 }

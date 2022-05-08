@@ -1,15 +1,17 @@
 .bubble {
   border-radius: 30px;
   padding: 12px 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   display: inline-block;
   max-width: 600px;
 }
 
+.bubble:not(:first-of-type) {
+  margin-top: 10px;
+}
+
 .bubble {
   margin-right: 25%;
-  background-color: #eee;
+  background-color: #eeeeee;
   position: relative;
 }
 
@@ -22,7 +24,7 @@
   left: -12px;
   height: 26px;
   width: 30px;
-  background: #eee;
+  background: #eeeeee;
   border-bottom-right-radius: 20px;
 }
 

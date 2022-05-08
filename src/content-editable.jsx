@@ -27,7 +27,7 @@ class ContentEditable extends React.Component {
 
   emitChange = () => {
     const { current: div } = this.refElement
-    var value = div.innerText
+    let value = div.innerText
     if (this.props.onChange && value !== this.lastValue) {
       this.props.onChange({
         target: {
