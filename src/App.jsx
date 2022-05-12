@@ -5,6 +5,7 @@ import Bubble from './bubble'
 import BubbleInput from './bubble-input'
 import useMessages from './use-messages'
 import { motion, AnimatePresence } from 'framer-motion'
+import playAudio from './playAudio'
 
 function App() {
   const [messages, addMessage] = useMessages([])
@@ -14,6 +15,7 @@ function App() {
     if (newMessage.length > 0) {
       addMessage(newMessage)
       setNewMessage('')
+      playAudio('', "enter")
     }
   }, [newMessage, messages])
 
