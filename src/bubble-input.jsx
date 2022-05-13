@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useRef, useEffect } from 'react'
 import './bubble-input.css'
 import ContentEditable from './content-editable'
+import playAudio from './playAudio'
 
 const BubbleInput = ({ onChange, onSubmit, value }) => {
   const refEditable = useRef()
@@ -8,7 +9,8 @@ const BubbleInput = ({ onChange, onSubmit, value }) => {
 
   const handleChange = useCallback(
     e => {
-      onChange && onChange(e.target.value)
+      onChange && onChange(e.target.value), playAudio(e.target.value, "alphabet")
+      
     },
     [onChange]
   )
