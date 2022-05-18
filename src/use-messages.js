@@ -5,8 +5,7 @@ const useMessages = (initialValue = []) => {
 
   const addMessage = useCallback(
     msg => {
-      const i = messages.length
-      setMessages([...messages, msg])
+      setMessages(messages => [...messages, msg])
       setTimeout(() => {
         setMessages(current => {
           const n = [...current]
@@ -15,7 +14,7 @@ const useMessages = (initialValue = []) => {
         })
       }, 15000)
     },
-    [messages]
+    [setMessages]
   )
 
   return [messages, addMessage]

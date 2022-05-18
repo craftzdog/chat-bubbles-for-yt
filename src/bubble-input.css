@@ -1,6 +1,8 @@
 .bubble.input {
   transition: opacity 0.4s ease-in-out;
   opacity: 1;
+  border: none;
+  outline: none;
 }
 
 .bubble.input.submitted {
@@ -12,8 +14,6 @@
 }
 
 .bubble.input > div {
-  border: none;
-  outline: none;
   background-color: #eee;
   font-size: 32px;
   min-width: 30px;
