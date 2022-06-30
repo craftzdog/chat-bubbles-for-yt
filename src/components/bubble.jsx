@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import './bubble.css'
 
 const Bubble = ({ id, children, sender }) => {
   return (

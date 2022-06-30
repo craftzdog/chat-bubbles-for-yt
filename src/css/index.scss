@@ -1,0 +1,89 @@
+:root {
+  --bg: #00a000;
+  --bubble-bg: #eee;
+  --font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  background-color: var(--bg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.chat {
+  padding-left: 5.375rem;
+  padding-bottom: 12.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  font-size: 2rem;
+}
+.bubble {
+  border-radius: 1.875rem;
+  padding: 12px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  max-width: 600px;
+  margin-right: 25%;
+  background-color: var(--bubble-bg);
+  position: relative;
+  &:last-child,
+  &:nth-last-child(2) {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: -12px;
+      height: 26px;
+      width: 30px;
+      background: var(--bubble-bg);
+      border-bottom-right-radius: 20px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: -15px;
+      width: 15px;
+      height: 27px;
+      background: var(--bg);
+      border-bottom-right-radius: 15px;
+    }
+  }
+  &.input {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    border: none;
+    outline: none;
+    &.submitted {
+      transition: none;
+    }
+    &.empty {
+      opacity: 0;
+    }
+    & > div {
+      background-color: var(--bubble-bg);
+      font-size: 32px;
+      min-width: 30px;
+    }
+  }
+}

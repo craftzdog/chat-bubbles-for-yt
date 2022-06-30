@@ -1,4 +1,4 @@
-![cover](./cover.jpg)
+![cover](./src/img/cover.jpgcover.jpg)
 
 Chat bubble tool for YouTube
 ============================

@@ -1,5 +1,4 @@
 import React, { useCallback, useState, useRef, useEffect } from 'react'
-import './bubble-input.css'
 
 const BubbleInput = ({ onChange, onSubmit, value }) => {
   const refEditable = useRef()

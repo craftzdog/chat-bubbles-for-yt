@@ -11,11 +11,15 @@
   "dependencies": {
     "framer-motion": "^6.2.8",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass": "^1.53.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.1",
     "prettier": "^2.5.1",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "vite-plugin-pwa": "^0.12.1"
   }
 }
