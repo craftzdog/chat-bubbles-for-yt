@@ -7,7 +7,7 @@ const transition = {
   stiffness: 500,
   damping: 50,
   default: {
-    duration: 1
+    duration: 0.4
   }
 }
 

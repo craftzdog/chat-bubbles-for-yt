@@ -1,5 +1,5 @@
 .bubble {
-  max-width: 600px;
+  width: 100%;
 }
 
 .bubble-content {
@@ -9,7 +9,6 @@
   padding: 12px 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  hyphens: auto;
 }
 
 .bubble-content {
